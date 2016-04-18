@@ -1,0 +1,93 @@
+UBD 1200 serial portocol
+
+57600 8n1
+
+Imput commands terminated by LF
+
+You can replace leading zeros with spaces, but it's important to send correct number of chars!
+
+
+# model
+a
+UDB1210S
+
+# set duty cycle
+bd49
+
+bd00
+bd99
+
+# frequency
+bf   100000
+ok
+
+bf        0
+bf100000000
+
+# amplitude
+ba000
+ba255
+
+# duty cycle
+bd00
+bd99
+
+# decimal point
+bu-1
+bu0
+bu1 - bu9
+
+# wave
+bw0	sine
+bw1	triangle
+bw2	square
+
+# save
+bs0
+bs9
+
+# load
+bl0
+bl9
+
+# time
+bt00
+bt99
+
+# sweep
+br0	stop
+br1	start
+
+
+
+
+
+FUNC
+
+# amplitude
+ca
+ca000000255
+
+# ADC
+cb
+cb000000000
+cb000001347	1.347V
+
+# counter
+cc
+cc000005044
+
+# duity
+cd
+cd000000050	50%
+
+# external frequency
+ce
+ce000001000	1.000kHz
+
+# return current frequency
+cf
+cf100000000	10000 kHz
+
+
+
